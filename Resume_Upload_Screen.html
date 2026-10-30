@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Builder</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif, courier, moonspace, Times New Roman;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .clock {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 102, 0.5);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="Heading1" style = "color : white; font-family: courier; font-size: 24px ;">Hello, User!</h1>
+    <h1 id="Heading2" style = "color : white; font-family: courier; font-size: 24px;">We are going to build a Resume and Help you modify previous ones!</h1>
+    <button id="uploadButton" style="background-color: rgb(0, 255, 238); color:white; font-family: arial; font-size: 20px; border: 10px solid white; text-align: center;">Want to upload resume click me!</button>
+    <button id="createResume" style="background-color: aqua; color:white; font-family: arial; font-size: 20px; border: 10px solid white; text-align: center;">Want to create resume click me!</button>
+    <script>
+        function removeHeadings() {
+            document.getElementById("Heading1")?.remove();
+            document.getElementById("Heading2")?.remove();
+        }
+
+        ["uploadButton", "createResume"].forEach(function (buttonId) {
+            document.getElementById(buttonId).addEventListener("click", removeHeadings);
+        })
+    </script>
+</body>
+</html>

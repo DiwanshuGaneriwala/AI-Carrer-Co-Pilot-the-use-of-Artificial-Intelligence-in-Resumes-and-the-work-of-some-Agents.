@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+spacy
+sentence-transformers
+numpy
+faiss-cpu
+openai
+python-docx
+pypandoc
+PyPDF2
+Pillow
+pytesseract
+pdf2image
